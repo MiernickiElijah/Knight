@@ -1,7 +1,8 @@
 // DEPENDENCIES
 // Series of npm packages that we will use to give our server useful functionality
-
 const express = require('express');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 // EXPRESS CONFIGURATION
 // This sets up the basic properties for our express server
@@ -21,8 +22,11 @@ app.use(express.static('public'));
 // ROUTER
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+// require('./routes/apiRoutes')(app);
+// require('./routes/htmlRoutes')(app);
+
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 // LISTENER
 // The below code effectively "starts" our server
