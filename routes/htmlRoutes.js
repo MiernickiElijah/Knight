@@ -2,7 +2,6 @@
 // We need to include the path package to get the correct file path for our html
 const fs = require('fs');
 const path = require('path');
-const api = require('../routes/apiRoutes')
 
 // ROUTING
 module.exports = (app) => {

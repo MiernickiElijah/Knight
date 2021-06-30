@@ -26,7 +26,7 @@ app.use(express.static('public'));
 // require('./routes/htmlRoutes')(app);
 
 app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
+htmlRoutes(app);
 
 // LISTENER
 // The below code effectively "starts" our server
