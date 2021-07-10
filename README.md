@@ -14,7 +14,7 @@ This is an online note taker that allows a user to place notes and retrieve them
 [License](#License)  
 --------------
 ## Usage  
-Its as simple as typing a note and hitting save. On the left side of the screen you can click on previous notes to retrieve them. 
+Its as simple as typing a note and hitting save. On the left side of the screen you can click on previous notes to retrieve them or the trash can button to delete them.
 --------------
 ## Screenshot  
 ![Screenshot](assets/images/screenshot.png)
