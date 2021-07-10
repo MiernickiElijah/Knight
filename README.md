@@ -2,7 +2,7 @@
 #Knight
 -------------
 ## Description  
-This is a online note taker that allows a user to place notes and retrieve them with ease. 
+This is an online note taker that allows a user to place notes and retrieve them with ease. 
 -------------
 #Table of Contents  
 [Knight](#Knight)  
