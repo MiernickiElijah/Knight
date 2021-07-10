@@ -16,12 +16,4 @@ module.exports = (app) => {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
   });
-
-  //update the DB when stuff changes
-  function updateDB() {
-    fs.writeFile("db/db.json", JSON.stringify(notes, '\t'), err => {
-      if (err) throw err;
-      return true;
-    });
-  }
 };
